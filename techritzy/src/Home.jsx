@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className='bg-black overflow-hidden'>
       <PageOne/>
-      <div className='bg-black flex flex-wrap gap-6 justify-around'>
+      <div className='bg-black flex flex-wrap  m-9 gap-6 justify-around'>
         {info.map(function(elem,idx){
     return (
      <Card key={idx} heading={elem.heading} description={elem.description} image={elem.image}/>

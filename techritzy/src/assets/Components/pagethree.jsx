@@ -28,7 +28,6 @@ const PageThree = () => {
         <p className='text-2xl'>Putting clients first, we proudly maintain an impressive  90% satisfaction rate in IT solutions.</p>
       </div>
       </div>
-      
     </div>
   )
 }
