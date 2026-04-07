@@ -1,0 +1,8 @@
+Techritzy-
+It is a service based IT company 
+Requirements to make website of Techritzy-
+1.logo
+2.A page that gives info about the company
+3.A page that gives info about what the company does and its past endevours i.e, past projects
+4.A detailed info the services the company provides
+5.A page that gives a form that is to be filled to render the services of the company
