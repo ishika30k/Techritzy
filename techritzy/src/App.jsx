@@ -6,6 +6,7 @@ import { Route,Routes } from 'react-router-dom'
 import WhatWeDo from './assets/Components/WhatWeDo'
 import ContactUs from './assets/Components/contactUs'
 import AboutUs from './AboutUs'
+import Footer from './assets/Components/Footer'
 
 const App = () => {
 
@@ -18,7 +19,7 @@ const App = () => {
         <Route path='/about' element={<AboutUs/>} />
         <Route path='/contact' element={<ContactUs/>} />
       </Routes>
-      
+      <Footer/>
     </div>  
   )
 }

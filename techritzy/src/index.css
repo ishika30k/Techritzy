@@ -1,2 +1,16 @@
 @import "tailwindcss";
+.heading-font {
+  font-family: 'Sora', sans-serif;
+}
+
+.body-font {
+  font-family: 'Inter', sans-serif;
+}
+
+.body-font2{
+    font-family: "Poiret One", sans-serif;
+}
+.body-font3{
+    font-family: "Poiret One", sans-serif;
+}
 

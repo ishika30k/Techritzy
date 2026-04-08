@@ -27,4 +27,31 @@ export const info = [{
     heading:"UI/UX DESIGN",
     description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
     image:"https://www.designesthetics.com/img/services/uiux.png"
+  },
+  {
+      heading:"Digital Marketing",
+      description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
+      image:"https://digitalpromenade.com/wp-content/uploads/2026/01/best-digital-marketing-agencies-in-mumbai.jpg"
+  },  
+  {
+    heading:"Training Institute",
+    description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
+    image:"https://media.istockphoto.com/id/1455935808/photo/technical-college-students-exchanging-ideas.jpg?s=612x612&w=0&k=20&c=dBX_083kTILhRsHblEf89cpabyz7cuXA-UYLLPyxvP0="
   }];
+
+
+export const contact = [{
+  image:"https://static.vecteezy.com/system/resources/thumbnails/002/205/854/small/email-icon-free-vector.jpg",
+  type:"EMAIL US",
+  info:"Techritzy@gmail.com"
+},
+{
+  image:"https://static.vecteezy.com/system/resources/previews/008/561/493/non_2x/telephone-icon-in-flat-style-isolated-on-white-background-call-icon-in-the-interface-of-an-operating-system-black-silhouette-free-vector.jpg",
+  type:"CALL US",
+  info:"+91 9926490045"
+},
+{
+  image:"https://www.shutterstock.com/image-vector/location-map-pin-icon-symbol-600nw-2476814193.jpg",
+  type:"FIND US",
+  info:"45 Patel Nagar, Opposite Inox Sapna Sangeeta, Near Apna Sweet, Indore (M.P)"
+}];
