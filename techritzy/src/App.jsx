@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react'
 import { Route,Routes } from 'react-router-dom'
 import WhatWeDo from './assets/Components/WhatWeDo'
 import ContactUs from './assets/Components/contactUs'
+import AboutUs from './AboutUs'
 
 const App = () => {
 
@@ -14,7 +15,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/services' element={<WhatWeDo/>} />
-        {/* <Route path='/about' element={<Services/>} /> */}
+        <Route path='/about' element={<AboutUs/>} />
         <Route path='/contact' element={<ContactUs/>} />
       </Routes>
       
