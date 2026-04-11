@@ -20,10 +20,10 @@ const Home = () => {
   return (
     <div className='bg-black overflow-hidden'>
       <PageOne/>
-      <div className='card bg-black flex flex-wrap justify-center gap-10 px-2 py-10'>
+      <div className='card bg-black flex flex-wrap justify-center gap-6 px-2 py-10'>
         {info.map(function(elem,idx){
     return (
-     <Card key={idx} heading={elem.heading} description={elem.description} image={elem.image}/>
+     <Card key={idx}  id={idx} heading={elem.heading} description={elem.description} image={elem.image}/>
       )
     })}
       </div>  
