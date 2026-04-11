@@ -2,72 +2,139 @@ import React from 'react'
 import Navbar from './Navbar'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { services } from './constants'
+import { useParams } from 'react-router-dom'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const WhatWeDo = () => {
 
+  const { id } = useParams()
+
+  let selectedServices = []
+
+  if (id !== undefined && services[Number(id)]) {
+    // ✅ Single service
+    selectedServices = [services[Number(id)]]
+  } else {
+    // ✅ All services (original page behavior)
+    selectedServices = services
+  }
+
   useGSAP(() => {
-    gsap.from('.heading', {
-      y: 100,
+    gsap.from('.hero-heading', {
+      y: 80,
       opacity: 0,
-      duration: 1,
-      ease: "power3.out"
+      duration: 1.1,
+      ease: 'power3.out',
+    })
+
+    gsap.utils.toArray('.service-card').forEach((card) => {
+      const img = card.querySelector('.service-img')
+      const content = card.querySelector('.service-content')
+
+      if (img) {
+        gsap.from(img, {
+          x: -60,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out',
+          scrollTrigger: { trigger: card, start: 'top 80%' },
+        })
+      }
+
+      if (content) {
+        gsap.from(content, {
+          x: 60,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out',
+          delay: 0.15,
+          scrollTrigger: { trigger: card, start: 'top 80%' },
+        })
+      }
+
+      gsap.from(card.querySelectorAll('.point'), {
+        y: 20,
+        opacity: 0,
+        stagger: 0.1,
+        duration: 0.6,
+        ease: 'power2.out',
+        delay: 0.35,
+        scrollTrigger: { trigger: card, start: 'top 75%' },
+      })
     })
   })
 
   return (
-    <div>
-      <div className=' p-10 flex flex-col gap-25 text-white'>
-        <h1 className='heading font-semibold text-6xl heading-font text-blue-600'>From Software Design To Research<br /> Consultancy We  Do It All.</h1>
-        <div className='flex gap-10'>
-          <img className='h-130 w-200' src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?semt=ais_hybrid&w=740&q=80" alt="" />  
-          <div className='flex flex-col gap-10 items-center '>
-            <h2 className='heading text-6xl font-semibold heading-font'>Software Design & Development</h2>
-            <h3 className='text-3xl font-semibold body-font2'>Turning ideas into scalable digital products</h3>
-            <p className='text-3xl font-medium body-font2'>We design and develop high-performance, user-centric software solutions tailored to your business needs. From intuitive UI/UX to robust backend systems, we ensure seamless functionality and scalability. <br />What we offer: <br />
-            1.Custom Web Applications <br />
-            2.Responsive UI/UX Design<br />
-            3.Full-Stack Development<br />
-            4.Performance Optimization</p>
-          </div>
-        </div>
-        <div className='flex gap-10'>
-          <div className='flex flex-col gap-10 items-center'>
-            <h2 className='heading text-6xl font-semibold heading-font'>Research Consultancy</h2>
-            <h3 className='text-3xl font-semibold body-font-2'>Data-driven insights for smarter decisions</h3>
-            <p className='text-3xl font-medium body-font2'>Our research and consultancy services help businesses and individuals make informed, strategic decisions through deep analysis and expert guidance. <br />We give services like: <br />
-            1.Research Implementation <br />
-            2.Research Publication <br />
-            3.Consultancy</p>
-          </div>
-          <img className='h-120 w-200' src="https://media.istockphoto.com/id/1927881398/photo/group-of-business-persons-talking-in-the-office.jpg?s=612x612&w=0&k=20&c=N0erlm9rQIa_kdBpwxSOa8E1my9bwY_oeN84wZIhais=" alt="" />
-        </div>
-        <div className='flex gap-10'>
-          <img className='h-120 w-180' src="https://digitalpromenade.com/wp-content/uploads/2026/01/best-digital-marketing-agencies-in-mumbai.jpg" alt="" />
-          <div className='flex flex-col gap-10 items-center'>
-            <h2 className='heading text-6xl font-semibold heading-font'>Digital Marketing</h2>
-            <h3 className='text-3xl font-semibold body-font-2'>Building your digital presence visually</h3>
-            <p className='text-3xl font-medium body-font2'>We help brands grow through impactful digital marketing and high-quality video production that captures attention and drives engagement. <br />We give services like: <br />
-            1.Social media marketing <br />
-            2.Brand strategy <br />
-            3.Editing & post-production </p>
-          </div>
-        </div>
-        <div className='flex gap-10'>
-          <div className='flex flex-col gap-10 items-center'>
-            <h2 className='heading text-6xl font-semibold heading-font'>Training Institute</h2>
-            <h3 className='text-3xl font-semibold body-font2'>Empowering the next generation of developers</h3>
-            <p className='text-3xl font-medium body-font2'>We train aspiring developers with industry-relevant skills and provide placement assistance to help them kickstart their careers. <br />
-            1.Training <br />
-              -Hands-on coding programs <br />
-              -Real-world project experience<br />
-              -Industry-focused curriculum <br />
-            2.Placement <br />
-              -Career guidance <br />
-              -Interview preparation <br />
-              -Placement support </p>
-          </div>
-          <img className='h-120 w-180' src="https://media.istockphoto.com/id/1455935808/photo/technical-college-students-exchanging-ideas.jpg?s=612x612&w=0&k=20&c=dBX_083kTILhRsHblEf89cpabyz7cuXA-UYLLPyxvP0=" alt="" />
-        </div>
+    <div className="bg-black min-h-screen text-white">
+
+      <Navbar />
+
+      {/* HERO */}
+      <div className="px-6 md:px-12 lg:px-20 pt-28 lg:pt-36 pb-10">
+        <h1 className="hero-heading heading-font font-bold text-3xl sm:text-5xl lg:text-7xl leading-tight max-w-4xl">
+          From Software Design<br />
+          to Research Consultancy —{' '}
+          <span className="text-blue-900" style={{ WebkitTextStroke: '1px rgba(14,116,144,0.5)' }}>
+            We Do It All.
+          </span>
+        </h1>
+      </div>
+
+      <div className="mx-6 md:mx-12 lg:mx-20 h-px bg-gradient-to-r from-transparent via-sky-900 to-transparent mb-20" />
+
+      {/* SERVICES */}
+      <div className="px-6 md:px-12 lg:px-20 flex flex-col gap-32 pb-32">
+
+        {selectedServices.map((service, index) => {
+
+          const actualIndex = id !== undefined ? Number(id) : index
+
+          return (
+            <div key={index} className="service-card flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
+
+              {/* IMAGE */}
+              <div className="service-img relative flex-shrink-0 w-full max-w-sm md:max-w-md lg:w-[480px]">
+                
+                <span className="absolute -top-4 -left-4 z-10 w-10 h-10 rounded-full bg-sky-900 border border-sky-700 flex items-center justify-center text-sky-300 text-sm font-bold font-mono">
+                  {String(actualIndex + 1).padStart(2, '0')}
+                </span>
+
+                <img
+                  src={service.img}
+                  alt={service.title}
+                  className="w-full h-72 lg:h-[420px] object-cover rounded-2xl"
+                />
+
+              </div>
+
+              {/* CONTENT */}
+              <div className="service-content flex flex-col gap-5 text-center lg:text-left items-center lg:items-start">
+                
+                <h2 className="heading-font font-bold text-2xl sm:text-3xl lg:text-6xl leading-tight">
+                  {service.title}
+                </h2>
+
+                <p className="body-font2 text-blue-800 text-base lg:text-3xl font-medium">
+                  {service.sub}
+                </p>
+
+                <ul className="flex flex-col gap-3 w-full">
+                  {service.points.map((pt, j) => (
+                    <li key={j} className="point flex items-center gap-3 text-slate-300">
+                      {pt}
+                    </li>
+                  ))}
+                </ul>
+
+              </div>
+
+            </div>
+          )
+        })}
+
       </div>
     </div>
   )
