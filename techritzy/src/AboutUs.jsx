@@ -15,8 +15,8 @@ const AboutUs = () => {
   })
 
   return (
-    <div className='text-white '>
-      <h1 className='heading text-5xl font-semibold justify-self-center p-10'>
+    <div className='text-white p-20'>
+      <h1 className='heading text-5xl font-semibold justify-self-center p-10 text-blue-900'>
         We Craft <br />Digital <br />Experiences
       </h1>
       <p className='text-3xl justify-self-center body-font2'>A boutique creative studio built on the belief that the best  digital<br /> products live at the intersection of beautiful design  and precise<br /> engineering.</p>
