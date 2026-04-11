@@ -1,42 +1,79 @@
 import React from 'react'
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from 'react-router-dom'
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+
+  useGSAP(() => {
+
+  gsap.from(".footer-item", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out",
+
+    scrollTrigger: {
+      trigger: ".footer-container",
+      start: "top 80%",
+    }
+  });
+
+});
+
   return (
-    <div className='flex gap-18 text-white justify-self-center p-20 text-xl'>
-      <div className='flex flex-col gap-12'>
-        <h2 className='text-blue-900 font-semibold md:text-5xl lg:text-7xl'>Techritzy</h2>
-        <p>A boutique creative <br /> studio crafting digital <br /> experiences that live at <br /> the intersection of <br /> beautiful design and <br /> precise engineering.</p>
-        <button className='rounded-4xl bg-black border-blue-900 border-2 hover:bg-blue-950'>Open for <br /> new projects</button>
+    <div className='footer-container flex flex-col md:flex-row flex-wrap lg:flex-row lg:gap-16 sm:gap-5 gap-10 text-white justify-center md:justify-between p-5 sm:p-10 lg:p-20 lg:justify-center-safe text-xl'>
+      <div className='flex flex-col gap-12 items-center md:items-start text-center md:text-left'>
+        <h2 className='text-blue-900 font-semibold text-5xl sm:text-4xl md:text-5xl lg:text-7xl'>
+          Techritzy
+        </h2>
+        <p className='text-md sm:text-xl md:text-xl lg:text-xl max-w-xs'>
+          A boutique creative <br /> studio crafting digital <br /> experiences that live at <br /> the intersection of <br /> beautiful design and <br /> precise engineering.
+        </p>
+        <Link to="/contact" className='rounded-4xl text-sm sm:text-sm md:text-base bg-black border-blue-900 border-2 hover:bg-blue-950 lg:text-xl px-4 py-2'>Open for <br /> new projects</Link>
       </div>
-      <div className='flex flex-col gap-5'>
-        <div className='flex gap-1'>
-            <div className="h-[2px] w-6 mt-3 bg-blue-900"></div>
-            <h2 className='text-blue-900 text-2xl'>NAVIGATE</h2>  
+      <div className='flex flex-col sm:gap-6 lg:gap-5 gap-6 items-center md:items-start text-center md:text-left'>
+        <div className='flex lg:gap-1 mt-6 lg:mt-6 md:mt-4 items-center'>
+            <div className="h-[2px] w-6 md:mt-0 sm:mt-0 lg:mt-0 bg-blue-900"></div>
+            <h2 className='text-blue-900 text-xl sm:text-md md:text-xl lg:text-2xl'>NAVIGATE</h2>  
         </div>
-        <h4>Home</h4>
-        <h4>What We Do</h4>
-        <h4>About Us</h4>
-        <h4>Contact Us</h4>
+        <Link to="/" className='lg:text-xl sm:text-md text-md'>Home</Link>
+        <Link to="/services" className='lg:text-xl sm:text-md text-md'>What We Do</Link>
+        <Link to="/about" className='lg:text-xl sm:text-md text-md'>About Us</Link>
+        <Link to="/contact" className='lg:text-xl sm:text-md text-md'>Contact Us</Link>
       </div>
-      <div className='flex flex-col gap-5'>
-        <div className='flex gap-1'>
-            <div className="h-[2px] w-6 mt-3 bg-blue-900"></div>
-            <h2 className='text-blue-900 text-2xl'>SERVICES</h2> 
+      <div className='flex flex-col sm:gap-6 lg:gap-5 gap-6 items-center md:items-start text-center md:text-left'>
+        <div className='flex gap-1 lg:mt-6 md:mt-4 items-center'>
+          <div className="h-[2px] w-6 lg:mt-0 md:mt-0 sm:mt-0 bg-blue-900"></div>
+          <h2 className='text-blue-900 text-lg sm:text-md md:text-xl lg:text-2xl'>SERVICES</h2> 
         </div>
-        <h4>Web Development</h4>
-        <h4>Consultancy Services</h4>
-        <h4>Infrasturcture <br /> Management</h4>
-        <h4>Digital Marketing</h4>
+        <Link to="/services/0" className='lg:text-xl text-md sm:text-md'>Software <br /> Development</Link>
+        <Link to="/services/2" className='lg:text-xl text-md sm:text-md'>Consultancy Services</Link>
+        <Link to="/services/4" className='lg:text-xl text-md sm:text-md'>
+          Infrastructure <br /> Management
+        </Link>
+        <Link to="/services/6" className='lg:text-xl text-md sm:text-md'>Digital Marketing</Link>
       </div>
-      <div className='flex flex-col gap-5'>
-        <div className='flex gap-1'>
-            <div className="h-[2px] w-6 mt-3 bg-blue-900"></div>
-            <h2 className='text-blue-900 text-2xl'>GET IN TOUCH</h2> 
+      <div className='flex flex-col sm:gap-6 lg:gap-5 gap-6 items-center md:items-start text-center md:text-left'>
+        <div className='flex gap-1 lg:mt-6 md:mt-4 items-center'>
+            <div className="h-[2px] w-6 md:mt-0 sm:mt-0 lg:mt-0 bg-blue-900"></div>
+            <h2 className='text-blue-900 text-sm sm:text-xl md:text-xl lg:text-2xl'>GET IN TOUCH</h2> 
         </div>
-        <h4>techritzy@gmail.com</h4>
-        <h4>+91 9926490045</h4>
-        <h4>45 Patel Nagar, Opposite <br /> Inox Sapna Sangeeta,<br /> Near Apna Sweet,<br /> Indore (M.P)</h4>
+        <a href="mailto:techritzy@gmail.com" className='lg:text-xl sm:text-md text-md'>
+          techritzy@gmail.com
+        </a>
+        <a href="tel:+919926490045" className='lg:text-xl sm:text-md text-md'>
+          +91 9926490045
+        </a>
+        <h4 className='lg:text-xl sm:text-md text-md max-w-xs'>
+          45 Patel Nagar, Opposite <br /> Inox Sapna Sangeeta,<br /> Near Apna Sweet,<br /> Indore (M.P)
+        </h4>
       </div>
+
     </div>
   )
 }
