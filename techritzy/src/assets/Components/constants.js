@@ -1,42 +1,42 @@
 export const info = [{
     heading:"SOFTWARE DEVELOPMENT",
     description:"Crafting software applications that are aligned with your business.",
-    image:"https://www.unicomcorp.com/wp-content/uploads/2018/12/Technical-Support.png"
+    image:"../src/assets/img1.webp"
   },
   {
     heading:"RESEARCH IMPLEMENTATION",
     description:"Developing research-based software to aid your business optimization.",
-    image:"https://express-industry.com/assets/images/services/tech.jpg"
+    image:"../src/assets/img2.webp"
   },
   {
     heading:"CONSULTANCY SERVICES",
     description:"Delivering expert consultancy solutions to drive business success.",
-    image:"https://img.freepik.com/free-photo/team-work-process-young-business-managers-crew-working-with-new-startup-project-labtop-wood-table-typing-keyboard-texting-message-analyze-graph-plans_1253-799.jpg?semt=ais_incoming&w=740&q=80"
+    image:"../src/assets/image3.webp"
   },
   {
     heading:"COMPLIANCE READINESS",
     description:"Proactively managing compliance to safeguard your operations",
-    image:"https://jpispl.in/image/services/technology-consultancy.png"
+    image:"../src/assets/img4.webp"
   },
   {
     heading:"INFRASTRUCTURE MANAGEMENT",
     description:"Providing reliable management and optimization of IT infrastructure to ensure seamless business operations.",
-    image:"https://www.q3tech.com/wp-content/uploads/2025/04/IT-Infrastructure-Management.jpg"
+    image:"../src/assets/img6.webp"
   },
   {
     heading:"UI/UX DESIGN",
     description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
-    image:"https://www.designesthetics.com/img/services/uiux.png"
+    image:"../src/assets/img7.webp"
   },
   {
       heading:"Digital Marketing",
       description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
-      image:"https://digitalpromenade.com/wp-content/uploads/2026/01/best-digital-marketing-agencies-in-mumbai.jpg"
+      image:"../src/assets/img8.webp"
   },  
   {
     heading:"Training Institute",
     description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
-    image:"https://media.istockphoto.com/id/1455935808/photo/technical-college-students-exchanging-ideas.jpg?s=612x612&w=0&k=20&c=dBX_083kTILhRsHblEf89cpabyz7cuXA-UYLLPyxvP0="
+    image:"../src/assets/img9.webp"
   }];
 
 
@@ -55,3 +55,94 @@ export const contact = [{
   type:"FIND US",
   info:"45 Patel Nagar, Opposite Inox Sapna Sangeeta, Near Apna Sweet, Indore (M.P)"
 }];
+
+export const services = [
+  {
+    title: 'Software Design & Development',
+    sub: 'Turning ideas into scalable digital products',
+    img: 'https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg',
+    points: [
+      'Custom Web & App Development',
+      'Frontend & Backend Engineering',
+      'API Integration',
+      'Performance & Scalability Optimization',
+    ],
+  },
+  {
+    title: 'Research Institution',
+    sub: 'Data-driven insights for smarter decisions',
+    img: 'https://media.istockphoto.com/id/1927881398/photo/group-of-business-persons-talking-in-the-office.jpg',
+    points: [
+      'Market & Technical Research',
+      'Data Analysis & Insights',
+      'Research Publications',
+      'Business Intelligence Reports',
+    ],
+  },
+  {
+    title: 'Consultancy Services',
+    sub: 'Strategic guidance for business and tech growth',
+    img: 'https://media.istockphoto.com/id/1455935808/photo/technical-college-students-exchanging-ideas.jpg',
+    points: [
+      'Business & Tech Strategy',
+      'Startup Consulting',
+      'Product Planning',
+      'Process Optimization',
+    ],
+  },
+  {
+    title: 'Compliance Readiness',
+    sub: 'Ensuring your business meets regulatory standards',
+    img: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85',
+    points: [
+      'Regulatory Compliance Audits',
+      'Documentation & Policy Setup',
+      'Risk Assessment',
+      'Data Protection & Security Compliance',
+    ],
+  },
+  {
+    title: 'Infrastructure Management',
+    sub: 'Reliable and scalable IT infrastructure solutions',
+    img: 'https://images.unsplash.com/photo-1518770660439-4636190af475',
+    points: [
+      'Cloud Infrastructure Setup (AWS, Azure)',
+      'Server & Network Management',
+      'DevOps & CI/CD Pipelines',
+      'System Monitoring & Maintenance',
+    ],
+  },
+  {
+    title: 'UI/UX Design',
+    sub: 'Designing intuitive and engaging user experiences',
+    img: 'https://images.unsplash.com/photo-1586717799252-bd134ad00e26',
+    points: [
+      'User Research & Wireframing',
+      'UI Design Systems',
+      'Prototyping (Figma)',
+      'Usability Testing',
+    ],
+  },
+  {
+    title: 'Digital Marketing',
+    sub: 'Building your digital presence and brand visibility',
+    img: 'https://digitalpromenade.com/wp-content/uploads/2026/01/best-digital-marketing-agencies-in-mumbai.jpg',
+    points: [
+      'Social Media Marketing',
+      'Search Engine Optimization (SEO)',
+      'Content Marketing',
+      'Paid Ads (Google & Meta)',
+    ],
+  },
+  {
+    title: 'Training Institute',
+    sub: 'Empowering the next generation of professionals',
+    img: 'https://media.istockphoto.com/id/1455935808/photo/technical-college-students-exchanging-ideas.jpg',
+    points: [
+      'Hands-on Coding Programs',
+      'Live Project Experience',
+      'Internships & Certification',
+      'Interview & Placement Support',
+    ],
+  }
+]
