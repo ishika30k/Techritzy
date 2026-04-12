@@ -10,7 +10,7 @@ import image8 from '../../assets/img9.webp';
 export const info = [{
     heading:"SOFTWARE DEVELOPMENT",
     description:"Crafting software applications that are aligned with your business.",
-    image:{image1}
+    image:image1
   },
   {
     heading:"RESEARCH IMPLEMENTATION",
