@@ -15,49 +15,51 @@ export const info = [{
   {
     heading:"RESEARCH IMPLEMENTATION",
     description:"Developing research-based software to aid your business optimization.",
-    image:{image2}
+    image:image2
   },
   {
     heading:"CONSULTANCY SERVICES",
     description:"Delivering expert consultancy solutions to drive business success.",
-    image:{image3}
+    image:image3
   },
   {
     heading:"COMPLIANCE READINESS",
     description:"Proactively managing compliance to safeguard your operations",
-    image:{image4}
+    image:image4
   },
   {
     heading:"INFRASTRUCTURE MANAGEMENT",
     description:"Providing reliable management and optimization of IT infrastructure to ensure seamless business operations.",
-    image:{image5}
+    image:image5
   },
   {
     heading:"UI/UX DESIGN",
     description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
-    image:{image6}
+    image:image6
   },
   {
       heading:"Digital Marketing",
       description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
-      image:{image7}
+      image:image7
   },  
   {
     heading:"Training Institute",
     description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
-    image:{image8}
+    image:image8
   }];
 
 
 export const contact = [{
   image:"https://static.vecteezy.com/system/resources/thumbnails/002/205/854/small/email-icon-free-vector.jpg",
   type:"EMAIL US",
-  info:"Techritzy@gmail.com"
+  info:"Techritzy@gmail.com",
+  link:"mailto:techritzy@gmail.com"
 },
 {
   image:"https://static.vecteezy.com/system/resources/previews/008/561/493/non_2x/telephone-icon-in-flat-style-isolated-on-white-background-call-icon-in-the-interface-of-an-operating-system-black-silhouette-free-vector.jpg",
   type:"CALL US",
-  info:"+91 9926490045"
+  info:"+91 9926490045",
+  link:"tel:+919926490045" 
 },
 {
   image:"https://www.shutterstock.com/image-vector/location-map-pin-icon-symbol-600nw-2476814193.jpg",
