@@ -33,7 +33,7 @@ const ContactUs = () => {
           LET'S TALK
         </h1>
 
-        <h2 className='text-lg sm:text-lg md:text-xl lg:text-3xl text-blue-900 hover:scale-105 hover:shadow-[#a9b1be] hover:-translate-y-3 max-w-3xl'>
+        <h2 className='text-lg sm:text-lg md:text-xl lg:text-3xl text-blue-800 hover:scale-105 hover:shadow-[#a9b1be] hover:-translate-y-3 max-w-3xl'>
           Whether you need a website, app, branding, or digital <br className='hidden sm:block' />
           solution we’re here to help bring your vision to life.
         </h2>
