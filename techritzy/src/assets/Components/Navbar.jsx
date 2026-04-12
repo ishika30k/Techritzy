@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { Menu, X } from "lucide-react";
-import logo from '/home/ishika/Desktop/practice/Front End/Techritzyyy/techritzy/src/assets/logo3.png'; // ✅ FIXED (important for deployment)
 
 const Navbar = () => {
 
@@ -29,10 +28,10 @@ const Navbar = () => {
   }, [open]);
 
   return (
-    <div className='fixed z-50 flex lg:h-25 md:h-22 h-16 bg-black/90 backdrop-blur-md w-full justify-between items-center px-6 lg:px-14 text-white'>
+    <div className='fixed z-50 flex lg:h-25 md:h-22 h-16 bg-black backdrop-blur-md w-full justify-between items-center px-6 lg:px-14 text-white'>
 
       <div className="ml-2 flex lg:gap-12 gap-4 items-center">
-        <img className='lg:h-25 md:h-20 h-12' src={logo} alt="" />
+        <img className='lg:h-25 md:h-20 h-12' src="../src/assets/logo3.png" alt="" />
         <div className='font-bold text-xl md:text-2xl lg:text-4xl'>
           <Link to='/'>Techritzy</Link>
         </div>

@@ -55,25 +55,25 @@ const PageThree = () => {
         <img className='h-10 lg:mx-16 lg:h-20 md:h-16 mx-10' src="https://simplior.com/wp-content/uploads/2022/05/nodejs-white-web-story.png" />
       </Marquee>
 
-      <div className='flex flex-col md:flex-row items-center md:items-start justify-around gap-10 md:gap-0 pt-10 md:pt-15'>
+      <div className='body-font4 flex flex-col md:flex-row items-center md:items-start justify-around gap-10 md:gap-0 pt-10 md:pt-15'>
         <div className='px-4 md:px-2 flex flex-col gap-2 text-center '>
-          <p className='font-semibold text-lg md:text-xl lg:text-5xl md:p-14 lg:p-18 leading-tight'>
+          <p className='font-semibold text-lg md:text-xl lg:text-6xl md:p-14 lg:p-18 leading-tight'>
             <span className="counter counter-1">1+</span> <br />Years of Excellence
           </p>
           <p className='text-sm md:text-lg lg:text-2xl lg:justify-center-safe lg:ml-28 max-w-xs'>
             Delivering Innovation for 7+ years, earning a reputation for innovation and reliability.
           </p>
         </div>
-        <div className='px-6 md:px-10 flex flex-col gap-3 text-center '>
-          <p className='font-semibold text-lg md:text-xl lg:text-5xl md:p-14 lg:p-18 leading-tight'>
+        <div className='body-font4 px-6 md:px-10 flex flex-col gap-3 text-center '>
+          <p className='font-semibold text-lg md:text-xl lg:text-6xl md:p-14 lg:p-18 leading-tight'>
             <span className='counter counter-2'>0+</span> <br />Successful Projects
           </p>
           <p className='text-sm md:text-lg lg:text-2xl lg:ml-32 max-w-xs'>
             Proven success with over 50+ projects delivered effectively across diverse IT domains.
           </p>
         </div>
-        <div className='px-6 md:px-10 flex flex-col gap-3 text-center'>
-          <p className='font-semibold text-lg md:text-xl lg:text-5xl md:p-14 lg:p-18 leading-tight'>
+        <div className='body-font4 px-6 md:px-10 flex flex-col gap-3 text-center'>
+          <p className='font-semibold text-lg md:text-xl lg:text-6xl md:p-14 lg:p-18 leading-tight'>
             <span className='counter counter-3 '>0%</span> <br />Client Satisfaction
           </p>
           <p className='text-sm md:text-lg lg:ml-28 lg:text-2xl max-w-xs'>

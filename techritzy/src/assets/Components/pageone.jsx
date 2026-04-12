@@ -30,8 +30,8 @@ const PageOne = () => {
       loop
       muted/>
       <div className=' items-center absolute z-10 pt-30 text-white'>
-        <h1 className='font-extrabold text-xl mt-0 lg:mt-16 lg:text-7xl md:text-6xl sm:text-5xl pl-24 heading'>SCALABLE IT SOLUTIONS <br/>THAT POWER <br/>YOUR BUSINESS GROWTH</h1>
-        <div className='lg:mt-32 lg:ml-200 text-center md:ml-30 ml-8 sm:justify-center-safe mt-12 p-0 md:mt-6 text-sm sm:text-xl md:text-xl lg:text-2xl text-gray-200 max-w-4xl '>
+        <h1 className='font-extrabold text-xl mt-0 lg:mt-16 lg:text-7xl md:text-6xl sm:text-5xl pl-24 heading heading-font'>SCALABLE IT SOLUTIONS <br/>THAT POWER <br/>YOUR BUSINESS GROWTH</h1>
+        <div className='lg:mt-32 lg:ml-200 text-center md:ml-30 ml-8 sm:justify-center-safe mt-12 p-0 md:mt-6 text-sm sm:text-xl md:text-xl lg:text-2xl text-gray-200 max-w-4xl heading-font'>
           <p className='lg:ml-4 md:ml-4 heading2' >"From software development to compliance and  digital transformation,we help businesses streamline operations, reduce risk, and scale confidently"</p>
           {/* <h2 className='heading2'> we help businesses streamline operations, reduce risk, and scale confidently"</h2> */}
         </div>
