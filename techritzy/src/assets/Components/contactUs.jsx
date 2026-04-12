@@ -52,6 +52,7 @@ const ContactUs = () => {
               image={elem.image} 
               type={elem.type} 
               info={elem.info}
+              link={elem.link}
             />
           )
         })}
