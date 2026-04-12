@@ -1,42 +1,51 @@
+import image1 from '../../assets/img1.webp';
+import image2 from '../../assets/img2.webp';
+import image3 from '../../assets/image3.webp';
+import image4 from '../../assets/img4.webp';
+import image5 from '../../assets/img6.webp';
+import image6 from '../../assets/img7.webp';
+import image7 from '../../assets/img8.webp';
+import image8 from '../../assets/img9.webp';
+
 export const info = [{
     heading:"SOFTWARE DEVELOPMENT",
     description:"Crafting software applications that are aligned with your business.",
-    image:"../src/assets/img1.webp"
+    image:{image1}
   },
   {
     heading:"RESEARCH IMPLEMENTATION",
     description:"Developing research-based software to aid your business optimization.",
-    image:"../src/assets/img2.webp"
+    image:{image2}
   },
   {
     heading:"CONSULTANCY SERVICES",
     description:"Delivering expert consultancy solutions to drive business success.",
-    image:"../src/assets/image3.webp"
+    image:{image3}
   },
   {
     heading:"COMPLIANCE READINESS",
     description:"Proactively managing compliance to safeguard your operations",
-    image:"../src/assets/img4.webp"
+    image:{image4}
   },
   {
     heading:"INFRASTRUCTURE MANAGEMENT",
     description:"Providing reliable management and optimization of IT infrastructure to ensure seamless business operations.",
-    image:"../src/assets/img6.webp"
+    image:{image5}
   },
   {
     heading:"UI/UX DESIGN",
     description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
-    image:"../src/assets/img7.webp"
+    image:{image6}
   },
   {
       heading:"Digital Marketing",
       description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
-      image:"../src/assets/img8.webp"
+      image:{image7}
   },  
   {
     heading:"Training Institute",
     description:"Creating intuitive and engaging user interfaces that improve user experience and drive customer satisfaction.",
-    image:"../src/assets/img9.webp"
+    image:{image8}
   }];
 
 
@@ -71,7 +80,7 @@ export const services = [
   {
     title: 'Research Institution',
     sub: 'Data-driven insights for smarter decisions',
-    img: 'https://media.istockphoto.com/id/1927881398/photo/group-of-business-persons-talking-in-the-office.jpg',
+    img: 'https://images.stockcake.com/public/6/7/e/67e288a4-d048-4dd3-9db9-816fb4eb81fc_large/technological-innovation-stockcake.jpg',
     points: [
       'Market & Technical Research',
       'Data Analysis & Insights',
@@ -82,7 +91,7 @@ export const services = [
   {
     title: 'Consultancy Services',
     sub: 'Strategic guidance for business and tech growth',
-    img: 'https://media.istockphoto.com/id/1455935808/photo/technical-college-students-exchanging-ideas.jpg',
+    img: 'https://savvycomsoftware.com/wp-content/uploads/2021/03/tech-consulting-services-1.jpg',
     points: [
       'Business & Tech Strategy',
       'Startup Consulting',
@@ -137,7 +146,7 @@ export const services = [
   {
     title: 'Training Institute',
     sub: 'Empowering the next generation of professionals',
-    img: 'https://media.istockphoto.com/id/1455935808/photo/technical-college-students-exchanging-ideas.jpg',
+    img: 'https://media.istockphoto.com/id/1371160686/photo/business-people-watching-a-presentation-on-the-whiteboard.jpg?s=612x612&w=0&k=20&c=imQjt7-_HkOEhlw4rtKkjw_YNiIfzfNziOAXHn8akXI=',
     points: [
       'Hands-on Coding Programs',
       'Live Project Experience',
