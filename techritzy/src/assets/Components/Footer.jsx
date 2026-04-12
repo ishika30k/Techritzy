@@ -28,7 +28,7 @@ const Footer = () => {
   return (
     <div className='footer-container flex flex-col md:flex-row flex-wrap lg:flex-row lg:gap-16 sm:gap-5 gap-10 text-white justify-center md:justify-between p-5 sm:p-10 lg:p-20 lg:justify-center-safe text-xl'>
       <div className='flex flex-col gap-12 items-center md:items-start text-center md:text-left'>
-        <Link to="/" className='hover:bg-blue-950 heading-font text-blue-900 font-semibold text-5xl sm:text-4xl md:text-5xl lg:text-7xl'>
+        <Link to="/" className=' heading-font text-blue-900 font-semibold text-5xl sm:text-4xl md:text-5xl lg:text-7xl'>
           Techritzy
         </Link>
         <p className='body-font4 text-md sm:text-xl md:text-xl lg:text-2xl max-w-xs'>
