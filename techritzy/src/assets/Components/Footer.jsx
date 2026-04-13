@@ -16,17 +16,16 @@ const Footer = () => {
     duration: 1,
     stagger: 0.2,
     ease: "power3.out",
-
     scrollTrigger: {
       trigger: ".footer-container",
-      start: "top 80%",
+      start: "top 90%",
     }
   });
 
 });
 
   return (
-    <div className='footer-container flex flex-col md:flex-row flex-wrap lg:flex-row lg:gap-16 sm:gap-5 gap-10 text-white justify-center md:justify-between p-5 sm:p-10 lg:p-20 lg:justify-center-safe text-xl'>
+    <div className='footer-container footer-item flex flex-col md:flex-row flex-wrap lg:flex-row lg:gap-16 sm:gap-5 gap-10 text-white justify-center md:justify-between p-5 sm:p-10 lg:p-20 lg:justify-center-safe text-xl'>
       <div className='flex flex-col gap-12 items-center md:items-start text-center md:text-left'>
         <Link to="/" className=' heading-font text-blue-900 font-semibold text-5xl sm:text-4xl md:text-5xl lg:text-7xl'>
           Techritzy
