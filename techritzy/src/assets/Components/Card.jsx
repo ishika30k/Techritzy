@@ -8,7 +8,7 @@ const Card = (props) => {
   return (
     <div 
     onClick={() => navigate(`/services/${props.id}`)}
-    className='card lg:h-115 lg:w-85 lg:p-3 lg:m-6 sm:h-80 sm:w-60 sm:p-2 sm:m-4 h-30 w-35 p-3 m-1 group rounded-xl relative bg-cover bg-black opacity-90 text-white bg-center '
+    className='card lg:h-115 lg:w-85 lg:p-6 lg:m-6 sm:h-80 sm:w-60 sm:p-2 sm:m-4 h-30 w-35 p-3 m-1 group rounded-xl relative bg-cover bg-black opacity-90 text-white bg-center '
     style={{backgroundImage: `url(${props.image})`}}
     >
     <div className='absolute inset-0 bg-black opacity-0 transition-all duration-300 group-hover:opacity-90'></div>
